@@ -42,7 +42,7 @@ public class CustomOAuth2SuccessHandler implements AuthenticationSuccessHandler 
             userRepository.save(newUser);
         }
 
-        // Redirect to home or dashboard
+        // Redirect back to frontend
         response.sendRedirect("http://localhost:5173/home");
     }
 }
